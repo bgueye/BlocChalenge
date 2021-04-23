@@ -55,13 +55,13 @@ class Articles
     private $fileImage;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="articles")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 
     /**
-     * @ORM\ManyToMany(targetEntity=categories::class, inversedBy="articles")
+     * @ORM\ManyToMany(targetEntity=Categories::class, inversedBy="articles")
      */
     private $categorie;
 
